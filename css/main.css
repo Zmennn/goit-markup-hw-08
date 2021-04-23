@@ -43,13 +43,15 @@ body {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-left: -15px;
+  margin-right: -15px;
   margin-top: -30px;
 }
 
 .grid__items {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-left: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-top: 30px;
 }
 
@@ -430,7 +432,7 @@ body {
 }
 
 .contacts__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -479,10 +481,7 @@ body {
 }
 
 .contacts {
-  margin-left: auto;
-}
-
-.contacts {
+  margin-left: 84px;
   display: flex;
 }
 
@@ -494,6 +493,35 @@ body {
 @media screen and (max-width: 1199px) {
   .nav__list {
     margin-left: 88px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__item:nth-child(1) a {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__item:nth-child(2) a {
+    padding-top: 5px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167px;
+    letter-spacing: 0.02em;
   }
 }
 
