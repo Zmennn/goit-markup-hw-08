@@ -53,14 +53,6 @@ body {
   margin-top: 30px;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -75,6 +67,31 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 .logo {
@@ -771,6 +788,24 @@ body {
 
 .regular-customers__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    --grid-item: 3;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 1199px) {
+  .gallery {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    --grid-item: 1;
+  }
 }
 
 .gallery__subtitle {

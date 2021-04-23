@@ -1,6 +1,7 @@
-@import './utils/_variables.scss';
-@import './utils/_globalStyle.scss';
-@import './components/_logo.scss';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/globalStyle';
+@import './components/logo';
 @import './components/button';
 @import './components/battonAlternative';
 @import './components/socialIcons';
