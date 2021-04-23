@@ -1,0 +1,112 @@
+.footer {
+  background-color: $third-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address__town {
+  color: $primery-bg-color;
+}
+
+.address__link {
+  color: $addres-second-color;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.address {
+  margin-top: 20px;
+}
+.address__link,
+.address__town {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-family: $main-font;
+  font-style: normal;
+  display: block;
+}
+.address__list {
+  display: inline-flex;
+  flex-direction: column;
+}
+.address__item {
+  margin-top: 9px;
+}
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.145;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primery-bg-color;
+  margin-bottom: 20px;
+}
+.social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list__icon--footer {
+  fill: $primery-bg-color;
+}
+.footer__box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer__container-address,
+.footer__container-social {
+  flex-basis: calc((50% - 45px) / 2);
+}
+.social-list--footer {
+  justify-content: start;
+}
+.footer__container-form {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.footer__form-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.145;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primery-bg-color;
+}
+.footer__input {
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 0;
+  color: $addres-second-color;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.footer__input::placeholder {
+  color: $addres-second-color;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.footer__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer__icon {
+  margin-left: 10px;
+}
+.footer__button {
+  margin-right: 0;
+}

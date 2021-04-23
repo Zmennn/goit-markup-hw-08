@@ -1,0 +1,20 @@
+.our-features__item {
+  --grid-item: 4;
+}
+.our-features__container {
+  width: 270px;
+  height: 120px;
+  background-color: $second-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.our-features__subtitle {
+  color: $primari-title-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
