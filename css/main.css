@@ -70,19 +70,14 @@ body {
 }
 
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-@media screen and (max-width: 1199px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -496,6 +491,19 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .nav__list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav,
+  .contacts {
+    display: none;
+  }
+}
+
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -796,7 +804,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .gallery {
     --grid-item: 2;
   }

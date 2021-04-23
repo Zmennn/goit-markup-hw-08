@@ -67,6 +67,7 @@
   margin-left: 94px;
   display: flex;
 }
+
 .contacts {
   margin-left: auto;
 }
@@ -76,4 +77,15 @@
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.nav__list {
+  @include tablet {
+    margin-left: 88px;
+  }
+}
+.nav,
+.contacts {
+  @include phone {
+    display: none;
+  }
 }
