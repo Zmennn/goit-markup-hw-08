@@ -694,6 +694,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__container-social {
+    margin-top: 60px;
+  }
+}
+
 .footer__container-form {
   flex-basis: calc((100% - 30px) / 2);
 }
@@ -722,6 +728,13 @@ body {
 @media screen and (max-width: 1199px) {
   .footer__box {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__box {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -132,6 +132,11 @@
     align-items: center;
   }
 }
+.footer__container-social {
+  @include phone {
+    margin-top: 60px;
+  }
+}
 .footer__container-form {
   flex-basis: calc((100% - 30px) / 2);
 }
@@ -156,6 +161,12 @@
 .footer__box {
   @include tablet {
     flex-wrap: wrap;
+  }
+}
+.footer__box {
+  @include phone {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .footer__form {
