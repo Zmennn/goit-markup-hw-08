@@ -32,6 +32,12 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+.modal {
+  @include tablet {
+    width: 450px;
+    height: 609px;
+  }
+}
 .modal__off {
   position: absolute;
   right: 8px;
@@ -108,6 +114,12 @@
   border-radius: 4px;
   padding-left: 42px;
 }
+.modal__input {
+  @include tablet {
+    width: 370px;
+    height: 40px;
+  }
+}
 .modal__user-comment {
   width: 448px;
   height: 120px;
@@ -115,6 +127,12 @@
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+}
+.modal__user-comment {
+  @include tablet {
+    width: 370px;
+    height: 120px;
+  }
 }
 .modal__user-comment::placeholder {
   font-size: 14px;
@@ -125,9 +143,23 @@
 .checkbox__text {
   margin-left: 24px;
 }
+.checkbox__text {
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.167px;
+    letter-spacing: 0.03em;
+  }
+}
 .checkbox__link {
   color: $accent-color;
   text-decoration: underline;
+}
+.checkbox__link {
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.167px;
+    letter-spacing: 0.03em;
+  }
 }
 .checkbox {
   display: flex;
