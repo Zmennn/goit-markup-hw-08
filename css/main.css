@@ -579,6 +579,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    min-width: 480px;
+  }
+}
+
 .address__town {
   color: #ffffff;
 }

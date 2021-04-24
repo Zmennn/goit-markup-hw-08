@@ -8,6 +8,11 @@
     padding-top: 40px;
   }
 }
+.footer {
+  @include phone {
+    min-width: 480px;
+  }
+}
 
 .address__town {
   color: $primery-bg-color;
