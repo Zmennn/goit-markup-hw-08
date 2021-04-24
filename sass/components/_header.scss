@@ -53,6 +53,11 @@
   margin-right: auto;
   margin-left: auto;
 }
+.header {
+  @include phone {
+    height: 60px;
+  }
+}
 .header__container {
   align-items: center;
   display: flex;

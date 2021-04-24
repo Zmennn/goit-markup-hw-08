@@ -58,3 +58,9 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
 }
+.portfolio {
+  @include phone {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

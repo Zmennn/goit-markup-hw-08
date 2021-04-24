@@ -20,6 +20,12 @@
     padding-bottom: 26px;
   }
 }
+.logo {
+  @include phone {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .logo--footer {
   @include tablet {
     padding-top: 20px;
