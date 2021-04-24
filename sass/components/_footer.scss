@@ -3,6 +3,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer {
+  @include tablet {
+    padding-top: 40px;
+  }
+}
+
 .address__town {
   color: $primery-bg-color;
 }
@@ -16,8 +22,11 @@
 }
 
 .address {
-  margin-top: 20px;
+  @include desktop {
+    margin-top: 20px;
+  }
 }
+
 .address__link,
 .address__town {
   font-size: 14px;
@@ -31,8 +40,18 @@
   display: inline-flex;
   flex-direction: column;
 }
+.address__list {
+  @include tablet {
+    align-items: center;
+  }
+}
 .address__item {
   margin-top: 9px;
+}
+.address__item {
+  @include tablet {
+    margin-top: 8px;
+  }
 }
 .footer__text {
   font-weight: 700;
@@ -49,21 +68,11 @@
 .social-list__icon--footer {
   fill: $primery-bg-color;
 }
-.footer__box {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.footer__container-address,
-.footer__container-social {
-  flex-basis: calc((50% - 45px) / 2);
-}
+
 .social-list--footer {
   justify-content: start;
 }
-.footer__container-form {
-  flex-basis: calc((100% - 30px) / 2);
-}
+
 .footer__form-text {
   font-weight: 700;
   font-size: 14px;
@@ -98,15 +107,75 @@
   border-radius: 4px;
   padding-left: 16px;
 }
-.footer__form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
+.footer__label {
+  @include tablet {
+    margin-bottom: 20px;
+  }
 }
+
 .footer__icon {
   margin-left: 10px;
 }
+
+.footer__container-address,
+.footer__container-social {
+  @include desktop {
+    flex-basis: calc((50% - 45px) / 2);
+  }
+}
+.footer__container-address,
+.footer__container-social {
+  @include tablet {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__container-form {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.footer__container-form {
+  @include tablet {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+}
+.footer__box {
+  display: flex;
+  align-items: baseline;
+}
+.footer__box {
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+.footer__box {
+  @include tablet {
+    flex-wrap: wrap;
+  }
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__form {
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+.footer__form {
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__button {
-  margin-right: 0;
+  @include desktop {
+    margin-right: 0;
+  }
 }

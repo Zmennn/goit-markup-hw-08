@@ -77,5 +77,6 @@ body {
 .container {
   @include phone {
     max-width: 480px;
+    min-width: 320px;
   }
 }
