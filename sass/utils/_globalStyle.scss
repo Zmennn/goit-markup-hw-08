@@ -46,6 +46,11 @@ body {
   margin-right: 15px;
   margin-top: 30px;
 }
+.grid__items:first-child .gallery__border {
+  @include tablet {
+    padding-bottom: 56px;
+  }
+}
 
 .section {
   padding-bottom: 94px;
