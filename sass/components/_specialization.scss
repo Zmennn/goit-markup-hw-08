@@ -1,6 +1,11 @@
 .specialization {
   padding-top: 0;
 }
+.specialization {
+  @include tablet {
+    display: none;
+  }
+}
 .specialization__title {
   text-align: center;
   margin-bottom: 50px;

@@ -60,6 +60,13 @@ body {
   padding-top: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -558,7 +565,7 @@ body {
 }
 
 .contacts {
-  margin-left: 84px;
+  margin-left: auto;
   display: flex;
 }
 
@@ -891,10 +898,23 @@ body {
 
 .our-features__item {
   --grid-item: 4;
+  height: 251px;
+}
+
+@media screen and (max-width: 1199px) {
+  .our-features__item {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-features__item {
+    --grid-item: 1;
+    height: 226px;
+  }
 }
 
 .our-features__container {
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -914,6 +934,12 @@ body {
 
 .specialization {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .specialization {
+    display: none;
+  }
 }
 
 .specialization__title {
@@ -961,6 +987,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1, 178;
+    margin-bottom: 30px;
+  }
+}
+
 .team__subtitle {
   color: #212121;
   font-weight: 500;
@@ -981,6 +1015,18 @@ body {
   --grid-item: 4;
 }
 
+@media screen and (max-width: 1199px) {
+  .team__item {
+    --grid-item: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item {
+    --grid-item: 1;
+  }
+}
+
 .team__container {
   padding-bottom: 23px;
   padding-top: 30px;
@@ -990,6 +1036,29 @@ body {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .team__container {
+    padding-bottom: 25px;
+  }
+}
+
+.team__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .team__img {
+    height: 374px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__img {
+    height: 460px;
+  }
 }
 
 .regular-customers__title {

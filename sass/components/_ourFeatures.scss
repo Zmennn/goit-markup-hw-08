@@ -1,8 +1,19 @@
 .our-features__item {
   --grid-item: 4;
+  height: 251px;
+}
+.our-features__item {
+  @include tablet {
+    --grid-item: 2;
+  }
+}
+.our-features__item {
+  @include phone {
+    --grid-item: 1;
+    height: 226px;
+  }
 }
 .our-features__container {
-  width: 270px;
   height: 120px;
   background-color: $second-bg-color;
   display: flex;
