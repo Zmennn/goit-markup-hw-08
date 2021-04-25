@@ -63,7 +63,9 @@
   display: flex;
 }
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+  @include desktop {
+    margin-right: 50px;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
