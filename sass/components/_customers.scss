@@ -7,9 +7,24 @@
   color: $primari-title-color;
   margin-bottom: 50px;
 }
+.regular-customers__title {
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
 .regular-customers__item {
   --grid-item: 6;
   height: 90px;
+}
+.regular-customers__item {
+  @include tablet {
+    --grid-item: 3;
+  }
+}
+.regular-customers__item {
+  @include phone {
+    --grid-item: 2;
+  }
 }
 .regular-customers__link {
   height: 100%;

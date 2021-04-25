@@ -1076,9 +1076,27 @@ body {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .regular-customers__title {
+    margin-bottom: 30px;
+  }
+}
+
 .regular-customers__item {
   --grid-item: 6;
   height: 90px;
+}
+
+@media screen and (max-width: 1199px) {
+  .regular-customers__item {
+    --grid-item: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .regular-customers__item {
+    --grid-item: 2;
+  }
 }
 
 .regular-customers__link {
