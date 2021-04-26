@@ -112,13 +112,9 @@ body {
 
 @media screen and (max-width: 480px) {
   .container {
-    width: calc(100vw - 30px);
+    width: 100vw;
     min-width: 320px;
   }
-}
-
-.our-features {
-  background-color: rgba(127, 255, 212, 0.294);
 }
 
 .logo {
@@ -652,13 +648,14 @@ body {
 
 @media screen and (max-width: 767px) {
   .footer {
-    max-width: 480px;
+    max-width: 767px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .footer {
-    max-width: 480px;
+    width: 100vw;
+    min-width: 320px;
   }
 }
 
@@ -774,6 +771,14 @@ body {
 @media screen and (max-width: 1199px) {
   .footer__label {
     margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__label {
+    margin-bottom: 20px;
+    width: calc(100vw - 30px);
   }
 }
 
@@ -821,6 +826,12 @@ body {
 .footer__box {
   display: flex;
   align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__box {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -889,8 +900,16 @@ body {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
+    min-width: 320px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophone.jpg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100vw;
+    min-width: 320px;
   }
 }
 
@@ -921,6 +940,12 @@ body {
 @media screen and (max-width: 1199px) {
   .hero__container {
     width: 360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__container {
+    width: 320px;
   }
 }
 

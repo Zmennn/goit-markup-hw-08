@@ -10,12 +10,13 @@
 }
 .footer {
   @include phone {
-    max-width: 480px;
+    max-width: 767px;
   }
 }
 .footer {
   @include mini {
-    max-width: 480px;
+    width: 100vw;
+    min-width: 320px;
   }
 }
 
@@ -120,6 +121,13 @@
 .footer__label {
   @include tablet {
     margin-bottom: 20px;
+    width: 450px;
+  }
+}
+.footer__label {
+  @include mini {
+    margin-bottom: 20px;
+    width: calc(100vw - 30px);
   }
 }
 
@@ -162,6 +170,11 @@
 .footer__box {
   display: flex;
   align-items: baseline;
+}
+.footer__box {
+  @include phone {
+    justify-content: center;
+  }
 }
 .footer__box {
   @include desktop {

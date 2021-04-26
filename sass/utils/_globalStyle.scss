@@ -97,10 +97,7 @@ body {
 }
 .container {
   @include mini {
-    width: calc(100vw - 30px);
+    width: 100vw;
     min-width: 320px;
   }
-}
-.our-features {
-  background-color: rgba(127, 255, 212, 0.294);
 }
