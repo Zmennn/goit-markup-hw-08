@@ -104,6 +104,16 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+.our-features {
+  background-color: rgba(127, 255, 212, 0.294);
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -635,7 +645,13 @@ body {
 
 @media screen and (max-width: 767px) {
   .footer {
-    min-width: 480px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    max-width: 480px;
   }
 }
 

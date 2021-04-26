@@ -10,7 +10,12 @@
 }
 .footer {
   @include phone {
-    min-width: 480px;
+    max-width: 480px;
+  }
+}
+.footer {
+  @include mini {
+    max-width: 480px;
   }
 }
 
