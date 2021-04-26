@@ -73,6 +73,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    min-width: 320px;
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -106,6 +112,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .container {
+    width: calc(100vw - 30px);
     min-width: 320px;
   }
 }
