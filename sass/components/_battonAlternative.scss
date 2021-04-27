@@ -41,3 +41,8 @@
     margin-top: 15px;
   }
 }
+.portfolio__item:nth-last-child(3) {
+  @include mini {
+    margin-top: 15px;
+  }
+}

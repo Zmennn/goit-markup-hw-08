@@ -229,6 +229,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio__item:nth-last-child(3) {
+    margin-top: 15px;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: center;
