@@ -48,10 +48,13 @@
                     </a>
                 </li>
             </ul>
-            <button class="mobile-menu-button" type="button" >
+            <button
+             data-menu-button 
+             class="mobile-menu-button is-open"
+             type="button"
+            aria-expanded="false" >
                 <svg class="mobile-menu-button__icon" aria-level="Переключатель мобильного меню"  width="40" height="40">
                     <use class="mobile-menu-button__icon-menu" href="./images/icons.svg#icon-mob-menu"></use>
-                
                     <use class="mobile-menu-button__icon-cross"  href="./images/icons.svg#icon-mob-close"></use>
                 </svg>
             </button>
@@ -496,6 +499,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

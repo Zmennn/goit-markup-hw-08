@@ -1361,5 +1361,16 @@ body {
   .mobile-menu-button:focus, .mobile-menu-button:hover {
     fill: #2196f3;
   }
+  .mobile-menu-button .mobile-menu-button__icon-cross {
+    display: none;
+  }
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon-cross {
+  display: block;
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon-menu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

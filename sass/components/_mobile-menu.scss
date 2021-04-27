@@ -20,6 +20,16 @@
     &:hover {
       fill: $accent-color;
     }
+    & .mobile-menu-button__icon-cross {
+      display: none;
+    }
   }
 }
-.mobile-menu-button__icon-cross
+.mobile-menu-button.is-open {
+  & .mobile-menu-button__icon-cross {
+    display: block;
+  }
+  & .mobile-menu-button__icon-menu {
+    display: none;
+  }
+}
