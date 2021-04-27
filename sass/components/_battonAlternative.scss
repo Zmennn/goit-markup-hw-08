@@ -32,17 +32,19 @@
   flex-wrap: wrap;
 }
 
+.portfolio__list {
+  @include phone {
+    margin-bottom: 35px;
+    justify-content: start;
+  }
+}
+
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio__item:nth-last-child(1),
-.portfolio__item:nth-last-child(2) {
+
+.portfolio__item {
   @include phone {
-    margin-top: 15px;
-  }
-}
-.portfolio__item:nth-last-child(3) {
-  @include mini {
-    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }

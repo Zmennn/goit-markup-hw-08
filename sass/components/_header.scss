@@ -61,6 +61,7 @@
 .header__container {
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 .contacts__item:not(:last-child) {
   @include desktop {

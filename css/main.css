@@ -218,20 +218,20 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__list {
+    margin-bottom: 35px;
+    justify-content: start;
+  }
+}
+
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio__item:nth-last-child(1),
-  .portfolio__item:nth-last-child(2) {
-    margin-top: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .portfolio__item:nth-last-child(3) {
-    margin-top: 15px;
+  .portfolio__item {
+    margin-bottom: 15px;
   }
 }
 
@@ -312,6 +312,13 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 100%;
+    min-width: 320px;
+  }
+}
+
 .modal__off {
   position: absolute;
   right: 8px;
@@ -351,6 +358,7 @@ body {
 }
 
 .modal__label {
+  width: 448px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -366,6 +374,12 @@ body {
 
 .modal__label:focus-within .modal__input-icon {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__label {
+    width: 100%;
+  }
 }
 
 .modal__label-text {
@@ -390,7 +404,7 @@ body {
   cursor: pointer;
   transition-property: border-color;
   outline: none;
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -399,7 +413,12 @@ body {
 
 @media screen and (max-width: 1199px) {
   .modal__input {
-    width: 370px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal__input {
     height: 40px;
   }
 }
@@ -416,6 +435,13 @@ body {
 @media screen and (max-width: 1199px) {
   .modal__user-comment {
     width: 370px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__user-comment {
+    width: 100%;
     height: 120px;
   }
 }
@@ -454,6 +480,7 @@ body {
 
 .checkbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
@@ -571,6 +598,7 @@ body {
 .header__container {
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1271,7 +1299,8 @@ body {
 .backdrop,
 .footer__button,
 .modal__input,
-.modal__input-icon {
+.modal__input-icon,
+.mobile-menu-button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1302,5 +1331,35 @@ body {
 
 .team .social-list__link {
   transition-property: background-color, fill;
+}
+
+.mobile-menu-button {
+  transition-property: fill;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-button {
+    display: inline-flex;
+    fill: #212121;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .mobile-menu-button:focus, .mobile-menu-button:hover {
+    fill: #2196f3;
+  }
 }
 /*# sourceMappingURL=main.css.map */

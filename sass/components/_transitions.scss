@@ -11,7 +11,8 @@
 .backdrop,
 .footer__button,
 .modal__input,
-.modal__input-icon {
+.modal__input-icon,
+.mobile-menu-button {
   transition-duration: $time-duration;
   transition-timing-function: $transition-timing-function;
 }
@@ -41,4 +42,7 @@
 
 .team .social-list__link {
   transition-property: background-color, fill;
+}
+.mobile-menu-button {
+  transition-property: fill;
 }

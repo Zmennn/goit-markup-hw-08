@@ -38,6 +38,12 @@
     height: 609px;
   }
 }
+.modal {
+  @include phone {
+    max-width: 100%;
+    min-width: 320px;
+  }
+}
 .modal__off {
   position: absolute;
   right: 8px;
@@ -75,6 +81,7 @@
   color: $primari-title-color;
 }
 .modal__label {
+  width: 448px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -86,6 +93,11 @@
   }
   &:focus-within .modal__input-icon {
     fill: $accent-color;
+  }
+}
+.modal__label {
+  @include tablet {
+    width: 100%;
   }
 }
 .modal__label-text {
@@ -108,7 +120,7 @@
   cursor: pointer;
   transition-property: border-color;
   outline: none;
-  width: 448px;
+  width: 100%;
   height: $input-heigth;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -116,7 +128,11 @@
 }
 .modal__input {
   @include tablet {
-    width: 370px;
+    height: 40px;
+  }
+}
+.modal__input {
+  @include phone {
     height: 40px;
   }
 }
@@ -131,6 +147,12 @@
 .modal__user-comment {
   @include tablet {
     width: 370px;
+    height: 120px;
+  }
+}
+.modal__user-comment {
+  @include tablet {
+    width: 100%;
     height: 120px;
   }
 }
@@ -161,8 +183,10 @@
     letter-spacing: 0.03em;
   }
 }
+
 .checkbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
@@ -173,6 +197,7 @@
   text-align: center;
   cursor: pointer;
 }
+
 .checkbox__input {
   width: 16px;
   height: 16px;
