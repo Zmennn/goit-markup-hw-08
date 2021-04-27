@@ -616,9 +616,10 @@ body {
   display: flex;
 }
 
-.contacts {
-  margin-left: auto;
-  display: flex;
+@media screen and (max-width: 1199px) {
+  .nav__list {
+    margin-left: 88px;
+  }
 }
 
 .contacts__icon {
@@ -626,10 +627,9 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 1199px) {
-  .nav__list {
-    margin-left: 88px;
-  }
+.contacts {
+  margin-left: auto;
+  display: flex;
 }
 
 @media screen and (max-width: 1199px) {
