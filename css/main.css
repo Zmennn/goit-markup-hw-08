@@ -1300,7 +1300,8 @@ body {
 .footer__button,
 .modal__input,
 .modal__input-icon,
-.mobile-menu-button {
+.mobile-menu-button,
+.mobile-menu {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1388,7 +1389,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .mobile-menu.is-open {
+  .mobile-menu {
     z-index: 1;
     position: fixed;
     left: 0;
@@ -1403,6 +1404,11 @@ body {
     padding-left: 40px;
     padding-bottom: 48px;
     min-width: 320px;
+    transform: translateY(-100%);
+    transition-property: transform;
+  }
+  .mobile-menu.is-open {
+    transform: translateY(0);
   }
 }
 
