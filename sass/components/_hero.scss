@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-background/herotablet.jpg);
+      url(../images/hero-background/hero-tablet.jpg);
   }
 }
 .hero {
@@ -52,7 +52,18 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-background/herophone.jpg);
+      url(../images/hero-background/hero-phone.jpg);
+  }
+}
+.hero {
+  @include phone {
+    @include retina2 {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-background/hero-phone@2.jpg);
+    }
   }
 }
 .hero {
