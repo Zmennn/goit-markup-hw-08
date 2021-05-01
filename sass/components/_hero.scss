@@ -3,13 +3,22 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-background/hero.jpg);
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+.hero {
+  @include retina2 {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-background/hero@2.jpg);
+  }
 }
 .hero {
   @include tablet {
@@ -20,7 +29,18 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/herotablet.jpg);
+      url(../images/hero-background/herotablet.jpg);
+  }
+}
+.hero {
+  @include tablet {
+    @include retina2 {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-background/hero-tablet@2.jpg);
+    }
   }
 }
 .hero {
@@ -32,7 +52,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/herophone.jpg);
+      url(../images/hero-background/herophone.jpg);
   }
 }
 .hero {
