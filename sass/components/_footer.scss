@@ -32,12 +32,6 @@
   }
 }
 
-.address {
-  @include desktop {
-    margin-top: 20px;
-  }
-}
-
 .address__link,
 .address__town {
   font-size: 14px;
