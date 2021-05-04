@@ -10,7 +10,7 @@
 .our-features__item {
   @include phone {
     --grid-item: 1;
-    height: 226px;
+    height: auto;
   }
 }
 .our-features__container {

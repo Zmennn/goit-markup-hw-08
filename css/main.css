@@ -918,8 +918,6 @@ body {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -928,11 +926,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    max-width: 1200px;
+    background-size: cover;
     height: 400px;
     padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet.jpg);
   }
 }
@@ -945,8 +952,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
-    min-width: 320px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-phone.jpg);
   }
@@ -1015,7 +1021,7 @@ body {
 @media screen and (max-width: 767px) {
   .our-features__item {
     --grid-item: 1;
-    height: 226px;
+    height: auto;
   }
 }
 
