@@ -3,16 +3,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer {
-  @include tablet {
-    padding-top: 40px;
-  }
-}
-.footer {
-  @include phone {
-    max-width: 767px;
-  }
-}
 
 .address__town {
   color: $primery-bg-color;

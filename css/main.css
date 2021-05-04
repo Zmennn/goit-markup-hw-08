@@ -140,11 +140,9 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .logo--footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.logo--footer {
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .button {
@@ -659,18 +657,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (max-width: 1199px) {
-  .footer {
-    padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer {
-    max-width: 767px;
-  }
 }
 
 .address__town {
@@ -1228,7 +1214,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .gallery__text {
