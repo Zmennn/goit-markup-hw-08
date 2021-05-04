@@ -43,6 +43,12 @@
   color: $primery-bg-color;
   background-color: $overlay-color;
 }
+.gallery__overlay {
+  @include mini {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+}
 
 .gallery__overlay-box {
   position: relative;

@@ -1267,6 +1267,13 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (max-width: 480px) {
+  .gallery__overlay {
+    padding-top: 10px;
+    font-size: 15px;
+  }
+}
+
 .gallery__overlay-box {
   position: relative;
   overflow: hidden;
