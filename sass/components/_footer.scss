@@ -13,12 +13,6 @@
     max-width: 767px;
   }
 }
-.footer {
-  @include mini {
-    width: 100vw;
-    min-width: 320px;
-  }
-}
 
 .address__town {
   color: $primery-bg-color;

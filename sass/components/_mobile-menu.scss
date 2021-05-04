@@ -10,6 +10,9 @@
 }
 .mobile-menu-button {
   @include phone {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     z-index: 2;
     display: inline-flex;
     fill: $primari-title-color;
@@ -26,6 +29,11 @@
     }
   }
 }
+.header {
+  @include phone {
+    position: relative;
+  }
+}
 .mobile-menu-button.is-open {
   & .mobile-menu-button__icon-cross {
     display: block;
@@ -34,6 +42,12 @@
     display: none;
   }
 }
+.mobile-menu-button.is-open {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
 .mobile-menu {
   @include desktop {
     display: none;
@@ -85,9 +99,14 @@
   margin-top: auto;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1, 175;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+.mobile-menu__tel {
+  @include mini {
+    font-size: 25px;
+  }
 }
 .mobile-menu__mail {
   margin-top: 32px;
@@ -113,4 +132,9 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+.mobile-menu__social-link {
+  @include mini {
+    font-size: 13px;
+  }
 }

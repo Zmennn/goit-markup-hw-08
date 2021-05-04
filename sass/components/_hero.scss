@@ -76,7 +76,6 @@
 .hero {
   @include mini {
     width: 100vw;
-    min-width: 320px;
   }
 }
 
@@ -108,6 +107,7 @@
 }
 .hero__container {
   @include mini {
-    width: 320px;
+    width: auto;
+    max-width: 320px;
   }
 }
